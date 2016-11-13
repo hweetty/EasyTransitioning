@@ -1,6 +1,6 @@
 //
 //  ETTransitionController.swift
-//  EasyTransition
+//  EasyTransitioning
 //
 //  Created by Jerry Yu on 2016-11-11.
 //  Copyright © 2016 Jerry Yu. All rights reserved.

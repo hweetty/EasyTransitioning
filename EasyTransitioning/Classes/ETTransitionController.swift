@@ -9,9 +9,9 @@
 import UIKit
 
 public class ETTransitionController: NSObject {
-	var elements = [ETElement]()
-	var animationDuration: NSTimeInterval = 0.35
-	var isReversed = false
+	public var elements = [ETElement]()
+	public var animationDuration: NSTimeInterval = 0.35
+	public var isReversed = false
 }
 
 // MARK: UIViewControllerTransitioningDelegate

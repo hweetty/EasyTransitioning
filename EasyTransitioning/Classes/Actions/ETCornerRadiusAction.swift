@@ -9,10 +9,10 @@
 import UIKit
 
 public struct ETCornerRadiusAction: ETAction {
-	let toCornerRadius: CGFloat
-	let fromCornerRadius: CGFloat
+	public let toCornerRadius: CGFloat
+	public let fromCornerRadius: CGFloat
 
-	init(toCornerRadius: CGFloat, fromCornerRadius: CGFloat) {
+	public init(toCornerRadius: CGFloat, fromCornerRadius: CGFloat) {
 		self.toCornerRadius = toCornerRadius
 		self.fromCornerRadius = fromCornerRadius
 	}
@@ -22,8 +22,7 @@ public struct ETCornerRadiusAction: ETAction {
 		snapshotView.layer.cornerRadius = fromCornerRadius
 	}
 
-	public func animate
-		(snapshotView: UIView?, in containerView: UIView, animationDuration: NSTimeInterval) {
+	public func animate(snapshotView: UIView?, in containerView: UIView, animationDuration: NSTimeInterval) {
 		guard let snapshotView = snapshotView else { return }
 		snapshotView.layer.masksToBounds = true
 		let animation = CABasicAnimation(keyPath: "cornerRadius")

@@ -9,7 +9,7 @@
 import UIKit
 
 public struct ETElement {
-	var actions: [ETAction]
+	public var actions: [ETAction]
 
 	internal var snapshotView: UIView?
 

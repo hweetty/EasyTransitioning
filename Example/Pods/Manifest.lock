@@ -1,0 +1,16 @@
+PODS:
+  - EasyTransitioning (0.1.0)
+
+DEPENDENCIES:
+  - EasyTransitioning (from `../`)
+
+EXTERNAL SOURCES:
+  EasyTransitioning:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EasyTransitioning: 3f1a16baaf1321dc076d2aa112d6d3f88357bd62
+
+PODFILE CHECKSUM: e6849dabcd1ca1a3ef19c310664c4c0f9339fb4b
+
+COCOAPODS: 1.1.1

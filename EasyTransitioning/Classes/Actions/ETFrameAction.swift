@@ -9,15 +9,15 @@
 import UIKit
 
 public struct ETFrameAction: ETAction {
-	let toFrame: CGRect
-	let fromFrame: CGRect
+	public let toFrame: CGRect
+	public let fromFrame: CGRect
 
-	init(toFrame: CGRect, fromFrame: CGRect) {
+	public init(toFrame: CGRect, fromFrame: CGRect) {
 		self.toFrame = toFrame
 		self.fromFrame = fromFrame
 	}
 
-	init(toFrame: CGRect, fromFrameOfView view: UIView) {
+	public init(toFrame: CGRect, fromFrameOfView view: UIView) {
 		let fromFrame = view.superview?.convertRect(view.frame, toView: nil) ?? view.frame
 		self.init(toFrame: toFrame, fromFrame: fromFrame)
 	}

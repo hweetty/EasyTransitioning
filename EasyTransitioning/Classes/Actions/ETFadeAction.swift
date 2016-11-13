@@ -9,10 +9,10 @@
 import UIKit
 
 public struct ETFadeAction: ETAction {
-	let toAlpha: CGFloat
-	let fromAlpha: CGFloat
+	public let toAlpha: CGFloat
+	public let fromAlpha: CGFloat
 
-	init(toAlpha: CGFloat, fromAlpha: CGFloat) {
+	public init(toAlpha: CGFloat, fromAlpha: CGFloat) {
 		self.toAlpha = toAlpha
 		self.fromAlpha = fromAlpha
 	}

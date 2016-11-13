@@ -26,8 +26,9 @@ public struct ETCornerRadiusAction: ETAction {
 		guard let snapshotView = snapshotView else { return }
 		snapshotView.layer.masksToBounds = true
 		let animation = CABasicAnimation(keyPath: "cornerRadius")
-		animation.toValue = toCornerRadius
+		animation.fromValue = snapshotView.layer.cornerRadius
 		animation.duration = animationDuration
+		snapshotView.layer.cornerRadius = toCornerRadius
 		snapshotView.layer.addAnimation(animation, forKey: "cornerRadius")
 	}
 

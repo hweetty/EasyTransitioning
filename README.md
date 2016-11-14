@@ -6,7 +6,6 @@ Users expect applications to be immersive more than ever. Historically this can 
 
 # Example
 
-### Fade in/out
 ```swift
 // 1) Create a `ETTransitionController` instance with strong reference
 self.transitionController = ETTransitionController()

@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version          = '0.2.0'
   s.summary          = 'Removing the boilerplate code associated with UIViewControllerAnimatedTransitioning'
   s.description      = <<-DESC
-Make UIViewControllerAnimatedTransitioning better
+This library provides built-in animations for changing view properties during UIViewController present/dismiss transitions. It also provides an easy way to add your own customized animations.
                        DESC
 
   s.homepage         = 'https://github.com/hweetty/EasyTransitioning'

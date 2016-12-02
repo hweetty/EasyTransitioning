@@ -8,10 +8,18 @@
 
 import UIKit
 
+public enum ETAnimationOptions {
+	case normal(options: UIViewAnimationOptions)
+	case spring(damping: CGFloat, options: UIViewAnimationOptions)
+}
+
 public class ETTransitionController: NSObject {
 	public var elements = [ETElement]()
-	public var animationDuration: NSTimeInterval = 0.35
+
 	public var isReversed = false
+
+	public var animationDuration: NSTimeInterval = 0.35
+	public var animationOptions = ETAnimationOptions.normal(options: [.CurveEaseInOut])
 }
 
 // MARK: UIViewControllerTransitioningDelegate
@@ -48,17 +56,18 @@ extension ETTransitionController: UIViewControllerAnimatedTransitioning {
 			containerView.addSubview(toView)
 		}
 
-		let currentElements = isReversed ? elements.map{ $0.reversed() } : elements
+		var currentElements = elements
+		if isReversed { currentElements = currentElements.map{ $0.reversed() } }
+			
 		currentElements.flatMap{ $0.snapshotView }.forEach{ containerView.addSubview($0) }
 
 		currentElements.forEach{ element in
 			element.actions.forEach{ $0.setup(element.snapshotView, in: containerView) }
 		}
 
-		let duration = transitionDuration(transitionContext)
-		UIView.animateWithDuration(duration, animations: {
+		animationHelper(animationOptions, animations: {
 			currentElements.forEach{ element in
-				element.actions.forEach{ $0.animate(element.snapshotView, in: containerView, animationDuration: duration) }
+				element.actions.forEach{ $0.animate(element.snapshotView, in: containerView, animationDuration: self.animationDuration) }
 			}
 		}, completion: { _ in
 			if !self.isReversed {
@@ -69,5 +78,14 @@ extension ETTransitionController: UIViewControllerAnimatedTransitioning {
 			}
 			transitionContext.completeTransition(true)
 		})
+	}
+
+	private func animationHelper(options: ETAnimationOptions, animations: ()->Void, completion: (Bool)->Void) {
+		switch options {
+		case .normal(let options):
+			UIView.animateWithDuration(animationDuration, delay: 0, options: options, animations: animations, completion: completion)
+		case .spring(let damping, let options):
+			UIView.animateWithDuration(animationDuration, delay: 0, usingSpringWithDamping: damping, initialSpringVelocity: 0, options: options, animations: animations, completion: completion)
+		}
 	}
 }

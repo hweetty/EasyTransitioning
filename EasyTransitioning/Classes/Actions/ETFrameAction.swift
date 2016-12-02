@@ -18,7 +18,7 @@ public struct ETFrameAction: ETAction {
 	}
 
 	public init(toFrame: CGRect, fromFrameOfView view: UIView) {
-		let fromFrame = view.superview?.convertRect(view.frame, toView: nil) ?? view.frame
+		let fromFrame = view.superview?.convert(view.frame, to: nil) ?? view.frame
 		self.init(toFrame: toFrame, fromFrame: fromFrame)
 	}
 
@@ -28,7 +28,7 @@ public struct ETFrameAction: ETAction {
 	}
 
 	public func animate
-		(snapshotView: UIView?, in containerView: UIView, animationDuration: NSTimeInterval) {
+		(snapshotView: UIView?, in containerView: UIView, animationDuration: TimeInterval) {
 		guard let snapshotView = snapshotView else { return }
 		snapshotView.frame = toFrame
 	}

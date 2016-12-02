@@ -12,41 +12,41 @@ class Presented2ViewController: UIViewController {
 
 	let imageView = UIImageView(image: UIImage(named: "fox"))
 
-	override func preferredStatusBarStyle() -> UIStatusBarStyle {
-		return .LightContent
+	override var preferredStatusBarStyle : UIStatusBarStyle {
+		return .lightContent
 	}
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		view.backgroundColor = .blackColor()
+		view.backgroundColor = .black
 
-		imageView.contentMode = .ScaleAspectFit
+		imageView.contentMode = .scaleAspectFit
 		view.addSubview(imageView)
 		imageView.translatesAutoresizingMaskIntoConstraints = false
 		imageView.pinRatio(ratioOfImage(imageView.image!))
-		NSLayoutConstraint.activateConstraints([
-			imageView.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor),
-			imageView.centerYAnchor.constraintEqualToAnchor(view.centerYAnchor),
-			imageView.widthAnchor.constraintLessThanOrEqualToAnchor(view.widthAnchor),
-			imageView.heightAnchor.constraintLessThanOrEqualToAnchor(view.heightAnchor),
+		NSLayoutConstraint.activate([
+			imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+			imageView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+			imageView.widthAnchor.constraint(lessThanOrEqualTo: view.widthAnchor),
+			imageView.heightAnchor.constraint(lessThanOrEqualTo: view.heightAnchor),
 		])
 
-		let gest = UITapGestureRecognizer(target: self, action: #selector(dismiss))
+		let gest = UITapGestureRecognizer(target: self, action: #selector(close))
 		view.addGestureRecognizer(gest)
 	}
 
-	func dismiss() {
-		dismissViewControllerAnimated(true, completion: nil)
+	func close() {
+		self.dismiss(animated: true, completion: nil)
 	}
 
-	func ratioOfImage(image: UIImage) -> CGFloat {
+	func ratioOfImage(_ image: UIImage) -> CGFloat {
 		return image.size.width / image.size.height
 	}
 
 }
 
 extension UIView {
-	func pinRatio(widthToHeightRatio: CGFloat) {
-		NSLayoutConstraint(item: self, attribute: .Width, relatedBy: .Equal, toItem: self, attribute: .Height, multiplier: widthToHeightRatio, constant: 0).active = true
+	func pinRatio(_ widthToHeightRatio: CGFloat) {
+		NSLayoutConstraint(item: self, attribute: .width, relatedBy: .equal, toItem: self, attribute: .height, multiplier: widthToHeightRatio, constant: 0).isActive = true
 	}
 }

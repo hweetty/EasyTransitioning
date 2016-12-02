@@ -18,46 +18,46 @@ class ViewController: UIViewController {
 
 	let backgroundView = UIView()
 	let label = UILabel()
-	let squareView = UIView(frame: CGRectMake(2*PADDING, 2*PADDING, PADDING, PADDING))
+	let squareView = UIView(frame: CGRect(x: 2*PADDING, y: 2*PADDING, width: PADDING, height: PADDING))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-		view.backgroundColor = .whiteColor()
+		view.backgroundColor = .white
 
 		// We take a snapshot when presenting so we cannot directly change the
 		// backgroundView's `layer.cornerRadius`. Instead we embed it inside a container and change instead.
-		let backgroundFrame = CGRectInset(view.bounds, PADDING, PADDING)
+		let backgroundFrame = view.bounds.insetBy(dx: PADDING, dy: PADDING)
 		let roundedContainerView = UIView(frame: backgroundFrame)
-		roundedContainerView.backgroundColor = .clearColor()
+		roundedContainerView.backgroundColor = .clear
 		roundedContainerView.layer.cornerRadius = 8
 		roundedContainerView.layer.masksToBounds = true
 		view.addSubview(roundedContainerView)
 
-		backgroundView.backgroundColor = UIColor.orangeColor()
+		backgroundView.backgroundColor = UIColor.orange
 		backgroundView.frame = roundedContainerView.bounds
 		roundedContainerView.addSubview(backgroundView)
 
-		label.frame = CGRectMake(0, view.bounds.height - PADDING - 28, view.bounds.width, 28)
+		label.frame = CGRect(x: 0, y: view.bounds.height - PADDING - 28, width: view.bounds.width, height: 28)
 		label.text = "Main View Controller"
-		label.textAlignment = .Center
+		label.textAlignment = .center
 		view.addSubview(label)
 
-		squareView.backgroundColor = .blueColor()
+		squareView.backgroundColor = .blue
 		view.addSubview(squareView)
 
-		let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(present))
+		let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(showDetails))
 		view.addGestureRecognizer(gestureRecognizer)
     }
 
-	func present() {
+	func showDetails() {
 		let presentedVC = PresentedViewController()
 		transitionController.elements = createPresentationElements(presentedVC)
 		transitionController.animationDuration = 0.5
 		presentedVC.transitioningDelegate = transitionController
-		presentViewController(presentedVC, animated: true, completion: nil)
+		self.present(presentedVC, animated: true, completion: nil)
 	}
 
-	func createPresentationElements(presentedVC: PresentedViewController) -> [ETElement] {
+	func createPresentationElements(_ presentedVC: PresentedViewController) -> [ETElement] {
 		let squreToFrame = PresentedViewController.frameForSquareView(inViewOfSize: view.bounds.size)
 
 		_ = presentedVC.view

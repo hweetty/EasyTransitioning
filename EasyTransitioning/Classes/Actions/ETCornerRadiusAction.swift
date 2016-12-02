@@ -22,14 +22,14 @@ public struct ETCornerRadiusAction: ETAction {
 		snapshotView.layer.cornerRadius = fromCornerRadius
 	}
 
-	public func animate(snapshotView: UIView?, in containerView: UIView, animationDuration: NSTimeInterval) {
+	public func animate(snapshotView: UIView?, in containerView: UIView, animationDuration: TimeInterval) {
 		guard let snapshotView = snapshotView else { return }
 		snapshotView.layer.masksToBounds = true
 		let animation = CABasicAnimation(keyPath: "cornerRadius")
 		animation.fromValue = snapshotView.layer.cornerRadius
 		animation.duration = animationDuration
 		snapshotView.layer.cornerRadius = toCornerRadius
-		snapshotView.layer.addAnimation(animation, forKey: "cornerRadius")
+		snapshotView.layer.add(animation, forKey: "cornerRadius")
 	}
 
 	public func reversed() -> ETAction {

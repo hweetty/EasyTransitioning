@@ -18,18 +18,18 @@ class Example2ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		imageView.contentMode = .ScaleAspectFit
+		imageView.contentMode = .scaleAspectFit
 		view.addSubview(imageView)
 		imageView.translatesAutoresizingMaskIntoConstraints = false
-		NSLayoutConstraint.activateConstraints([
-			imageView.topAnchor.constraintEqualToAnchor(view.topAnchor),
-			imageView.heightAnchor.constraintEqualToConstant(view.bounds.height * 0.45),
+		NSLayoutConstraint.activate([
+			imageView.topAnchor.constraint(equalTo: view.topAnchor),
+			imageView.heightAnchor.constraint(equalToConstant: view.bounds.height * 0.45),
 
 			// We allow the width of the image to be flexible depending on image.
-			imageView.centerXAnchor.constraintEqualToAnchor(view.centerXAnchor),
+			imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 		])
 
-		let gest = UITapGestureRecognizer(target: self, action: #selector(present))
+		let gest = UITapGestureRecognizer(target: self, action: #selector(showDetails))
 		view.addGestureRecognizer(gest)
 	}
 
@@ -40,7 +40,7 @@ class Example2ViewController: UIViewController {
 		// "transparent padding" on both sides. Thus manipulating a snapshot would squish the image,
 		// whereas making a UIImageView copy handles it for us :).
 
-		// You can see for your self what happens if we use a snapshot by uncommenting the following.
+		// You can see for yourself what happens if we use a snapshot by uncommenting the following.
 //		let snapshot = imageView.snapshotViewAfterScreenUpdates(true)
 //		return snapshot!
 
@@ -50,11 +50,11 @@ class Example2ViewController: UIViewController {
 		return copy
 	}
 
-	func present() {
+	func showDetails() {
 		let imageViewCopy = createImageViewCopy()
 
 		let blackBackgroundView = UIView()
-		blackBackgroundView.backgroundColor = .blackColor()
+		blackBackgroundView.backgroundColor = .black
 
 		let vc = Presented2ViewController()
 		vc.view.layoutSubviews()
@@ -64,7 +64,7 @@ class Example2ViewController: UIViewController {
 			imageViewCopy.easyTransition(ETFrameAction(toFrame: vc.imageView.frame, fromFrameOfView: imageView), shouldSnapshot: false),
 		]
 		vc.transitioningDelegate = transitionController
-		presentViewController(vc, animated: true, completion: nil)
+		self.present(vc, animated: true, completion: nil)
 	}
 
 }

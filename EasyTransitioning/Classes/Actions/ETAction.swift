@@ -10,7 +10,7 @@ import UIKit
 
 public protocol ETAction {
 	func setup(snapshotView: UIView?, in containerView: UIView)
-	func animate(snapshotView: UIView?, in containerView: UIView, animationDuration: NSTimeInterval)
+	func animate(snapshotView: UIView?, in containerView: UIView, animationDuration: TimeInterval)
 	func completed(snapshotView: UIView?, in containerView: UIView)
 
 	func reversed() -> ETAction
@@ -19,7 +19,7 @@ public protocol ETAction {
 public extension ETAction {
 	// Default no-op
 	func setup(snapshotView: UIView?, in containerView: UIView) {}
-	func animate(snapshotView: UIView?, in containerView: UIView, animationDuration: NSTimeInterval) {}
+	func animate(snapshotView: UIView?, in containerView: UIView, animationDuration: TimeInterval) {}
 	func completed(snapshotView: UIView?, in containerView: UIView) {}
 
 	func reversed() -> ETAction { return self }

@@ -22,7 +22,7 @@ public struct ETFadeAction: ETAction {
 		snapshotView.alpha = fromAlpha
 	}
 
-	public func animate(snapshotView: UIView?, in containerView: UIView, animationDuration: NSTimeInterval) {
+	public func animate(snapshotView: UIView?, in containerView: UIView, animationDuration: TimeInterval) {
 		guard let snapshotView = snapshotView else { return }
 		snapshotView.alpha = toAlpha
 	}

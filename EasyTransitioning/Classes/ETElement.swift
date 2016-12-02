@@ -15,15 +15,15 @@ public struct ETElement {
 
 	init(view: UIView, actions: [ETAction] = [], shouldSnapshot: Bool = true) {
 		self.actions = actions
-		self.snapshotView = shouldSnapshot ? view.snapshotViewAfterScreenUpdates(true) : view
-		snapshotView?.frame = view.superview?.convertRect(view.frame, toView: nil) ?? view.frame
+		self.snapshotView = shouldSnapshot ? view.snapshotView(afterScreenUpdates: true) : view
+		snapshotView?.frame = view.superview?.convert(view.frame, to: nil) ?? view.frame
 	}
 
 	init(view: UIView, action: ETAction) {
 		self.init(view: view, actions: [action])
 	}
 
-	private init(actions: [ETAction], snapshotView: UIView?) {
+	fileprivate init(actions: [ETAction], snapshotView: UIView?) {
 		self.actions = actions
 		self.snapshotView = snapshotView
 	}
@@ -36,11 +36,11 @@ public struct ETElement {
 
 public extension UIView {
 
-	func easyTransition(actions: [ETAction], shouldSnapshot: Bool = true) -> ETElement {
+	func easyTransition(_ actions: [ETAction], shouldSnapshot: Bool = true) -> ETElement {
 		return ETElement(view: self, actions: actions, shouldSnapshot: shouldSnapshot)
 	}
 
-	func easyTransition(action: ETAction, shouldSnapshot: Bool = true) -> ETElement {
+	func easyTransition(_ action: ETAction, shouldSnapshot: Bool = true) -> ETElement {
 		return easyTransition([action], shouldSnapshot: shouldSnapshot)
 	}
 

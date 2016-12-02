@@ -15,6 +15,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6793383B63A40E387B6D3AA4 /* Pods_EasyTransitioning_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42B8C5C505950611F1706C6 /* Pods_EasyTransitioning_Tests.framework */; };
 		F133513E1DD8D36300AE5C5B /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133513D1DD8D36300AE5C5B /* PresentedViewController.swift */; };
+		F16A23FF1DF104C100B9326A /* Example2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A23FE1DF104C100B9326A /* Example2ViewController.swift */; };
+		F16A24021DF104E400B9326A /* Presented2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A24011DF104E400B9326A /* Presented2ViewController.swift */; };
 		FA5CC8BCC258A7ADED8F5A28 /* Pods_EasyTransitioning_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3469462AE9ED63CB461505EA /* Pods_EasyTransitioning_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		D4431306D488C9AC8E2EF131 /* Pods-EasyTransitioning_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitioning_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitioning_Example/Pods-EasyTransitioning_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E42B8C5C505950611F1706C6 /* Pods_EasyTransitioning_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTransitioning_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F133513D1DD8D36300AE5C5B /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
+		F16A23FE1DF104C100B9326A /* Example2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Example2ViewController.swift; path = "Example 2/Example2ViewController.swift"; sourceTree = "<group>"; };
+		F16A24011DF104E400B9326A /* Presented2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presented2ViewController.swift; path = "Example 2/Presented2ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				F133513D1DD8D36300AE5C5B /* PresentedViewController.swift */,
+				F16A23FD1DEFA76B00B9326A /* Example 1 */,
+				F16A24001DF104CA00B9326A /* Example 2 */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -160,6 +164,24 @@
 				911978EAE56D668901D1EE91 /* Pods-EasyTransitioning_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F16A23FD1DEFA76B00B9326A /* Example 1 */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				F133513D1DD8D36300AE5C5B /* PresentedViewController.swift */,
+			);
+			name = "Example 1";
+			sourceTree = "<group>";
+		};
+		F16A24001DF104CA00B9326A /* Example 2 */ = {
+			isa = PBXGroup;
+			children = (
+				F16A23FE1DF104C100B9326A /* Example2ViewController.swift */,
+				F16A24011DF104E400B9326A /* Presented2ViewController.swift */,
+			);
+			name = "Example 2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,9 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F16A23FF1DF104C100B9326A /* Example2ViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				F133513E1DD8D36300AE5C5B /* PresentedViewController.swift in Sources */,
+				F16A24021DF104E400B9326A /* Presented2ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,6 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EasyTransitioning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.jerryyu.EasyTransitioning-Example";
@@ -512,6 +537,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EasyTransitioning/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "ca.jerryyu.EasyTransitioning-Example";

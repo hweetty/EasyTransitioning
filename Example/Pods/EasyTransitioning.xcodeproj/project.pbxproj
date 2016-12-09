@@ -58,9 +58,9 @@
 		9D6C9C6314A9ACA41A12973B647F2455 /* EasyTransitioning-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyTransitioning-dummy.m"; sourceTree = "<group>"; };
 		A4B7877F6968F797ECAF0B9EAC33C6B4 /* Pods-EasyTransitioning_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTransitioning_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A6AEABEF1F2815286DB4A47584D7706D /* Pods-EasyTransitioning_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTransitioning_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		AFB673333F081A3DE9586C3D85EAAF4B /* Pods_EasyTransitioning_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTransitioning_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB673333F081A3DE9586C3D85EAAF4B /* EasyTransitioning_EasyTransitioning_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyTransitioning_EasyTransitioning_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3922C3C1246B69638B0500D3BD89600 /* EasyTransitioning.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EasyTransitioning.modulemap; sourceTree = "<group>"; };
-		C139C5E999F46271484C1C9AB47DAD06 /* Pods_EasyTransitioning_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTransitioning_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C139C5E999F46271484C1C9AB47DAD06 /* EasyTransitioning_EasyTransitioning_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyTransitioning_EasyTransitioning_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB89F39AEC57CA951101F71847340C6F /* Pods-EasyTransitioning_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTransitioning_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E91AE40E3226A9C6E3F45D1C3E5A5095 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -176,8 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				7C69B2435D4CEECC4D4DCB33DA51A66B /* EasyTransitioning.framework */,
-				C139C5E999F46271484C1C9AB47DAD06 /* Pods_EasyTransitioning_Example.framework */,
-				AFB673333F081A3DE9586C3D85EAAF4B /* Pods_EasyTransitioning_Tests.framework */,
+				C139C5E999F46271484C1C9AB47DAD06 /* EasyTransitioning_EasyTransitioning_Example.framework */,
+				AFB673333F081A3DE9586C3D85EAAF4B /* EasyTransitioning_EasyTransitioning_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -275,9 +275,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5E36971DA06B2C641AA4DDB73B7196DB /* Pods-EasyTransitioning_Tests */ = {
+		5E36971DA06B2C641AA4DDB73B7196DB /* EasyTransitioning-EasyTransitioning_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FB8A1687F1FAC4EB2FB791796F8961AE /* Build configuration list for PBXNativeTarget "Pods-EasyTransitioning_Tests" */;
+			buildConfigurationList = FB8A1687F1FAC4EB2FB791796F8961AE /* Build configuration list for PBXNativeTarget "EasyTransitioning-EasyTransitioning_Tests" */;
 			buildPhases = (
 				484F5D17D276637EF11A741FB7719075 /* Sources */,
 				9FE4CA19221C5F8CED8CD22E120D4AD1 /* Frameworks */,
@@ -287,14 +287,14 @@
 			);
 			dependencies = (
 			);
-			name = "Pods-EasyTransitioning_Tests";
+			name = "EasyTransitioning-EasyTransitioning_Tests";
 			productName = "Pods-EasyTransitioning_Tests";
-			productReference = AFB673333F081A3DE9586C3D85EAAF4B /* Pods_EasyTransitioning_Tests.framework */;
+			productReference = AFB673333F081A3DE9586C3D85EAAF4B /* EasyTransitioning_EasyTransitioning_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		620D64F7DCABBB5E3582741360B46F5A /* Pods-EasyTransitioning_Example */ = {
+		620D64F7DCABBB5E3582741360B46F5A /* EasyTransitioning-EasyTransitioning_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41506637DFFAEC34C41EB7568D11E70D /* Build configuration list for PBXNativeTarget "Pods-EasyTransitioning_Example" */;
+			buildConfigurationList = 41506637DFFAEC34C41EB7568D11E70D /* Build configuration list for PBXNativeTarget "EasyTransitioning-EasyTransitioning_Example" */;
 			buildPhases = (
 				7A0181A086020C9047484A9B43848DE0 /* Sources */,
 				722144CE965276FC88C2B4D392B2E044 /* Frameworks */,
@@ -305,9 +305,9 @@
 			dependencies = (
 				945033ABFAF67DB21E0DFFAA77C5B197 /* PBXTargetDependency */,
 			);
-			name = "Pods-EasyTransitioning_Example";
+			name = "EasyTransitioning-EasyTransitioning_Example";
 			productName = "Pods-EasyTransitioning_Example";
-			productReference = C139C5E999F46271484C1C9AB47DAD06 /* Pods_EasyTransitioning_Example.framework */;
+			productReference = C139C5E999F46271484C1C9AB47DAD06 /* EasyTransitioning_EasyTransitioning_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		9248D9D5436393BE43BDF5B1EA052CE9 /* EasyTransitioning */ = {
@@ -334,7 +334,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0810;
 				TargetAttributes = {
 					5E36971DA06B2C641AA4DDB73B7196DB = {
 						LastSwiftMigration = 0810;
@@ -347,7 +347,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "EasyTransitioning" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -360,8 +360,8 @@
 			projectRoot = "";
 			targets = (
 				9248D9D5436393BE43BDF5B1EA052CE9 /* EasyTransitioning */,
-				620D64F7DCABBB5E3582741360B46F5A /* Pods-EasyTransitioning_Example */,
-				5E36971DA06B2C641AA4DDB73B7196DB /* Pods-EasyTransitioning_Tests */,
+				620D64F7DCABBB5E3582741360B46F5A /* EasyTransitioning-EasyTransitioning_Example */,
+				5E36971DA06B2C641AA4DDB73B7196DB /* EasyTransitioning-EasyTransitioning_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -468,7 +468,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EasyTransitioning_Tests;
+				PRODUCT_NAME = EasyTransitioning_EasyTransitioning_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -516,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CB89F39AEC57CA951101F71847340C6F /* Pods-EasyTransitioning_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -538,7 +539,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EasyTransitioning_Example;
+				PRODUCT_NAME = EasyTransitioning_EasyTransitioning_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -563,14 +564,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -584,6 +589,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -603,15 +609,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -659,7 +669,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EasyTransitioning_Tests;
+				PRODUCT_NAME = EasyTransitioning_EasyTransitioning_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -673,6 +683,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A4B7877F6968F797ECAF0B9EAC33C6B4 /* Pods-EasyTransitioning_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -695,7 +706,7 @@
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_EasyTransitioning_Example;
+				PRODUCT_NAME = EasyTransitioning_EasyTransitioning_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -708,7 +719,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "EasyTransitioning" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
@@ -717,7 +728,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41506637DFFAEC34C41EB7568D11E70D /* Build configuration list for PBXNativeTarget "Pods-EasyTransitioning_Example" */ = {
+		41506637DFFAEC34C41EB7568D11E70D /* Build configuration list for PBXNativeTarget "EasyTransitioning-EasyTransitioning_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				747E920D95DB3F1CEBEDC1B558E4E477 /* Debug */,
@@ -735,7 +746,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FB8A1687F1FAC4EB2FB791796F8961AE /* Build configuration list for PBXNativeTarget "Pods-EasyTransitioning_Tests" */ = {
+		FB8A1687F1FAC4EB2FB791796F8961AE /* Build configuration list for PBXNativeTarget "EasyTransitioning-EasyTransitioning_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E920642A8D5E2208B8E21D49580E75B /* Debug */,

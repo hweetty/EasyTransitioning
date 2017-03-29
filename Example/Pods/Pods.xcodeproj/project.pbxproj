@@ -15,6 +15,7 @@
 		B112A88AB4D80824B7E90DCA3C27C4FD /* Pods-EasyTransitioning_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A8C35D9F1C597644EB461D8F14591D /* Pods-EasyTransitioning_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB72AD48AF85E7DF543F216369A9C976 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		E0EFE84DAC208C73238A3D60C1865881 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		F11092761E8B5372000935A8 /* ETTransformAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11092751E8B5372000935A8 /* ETTransformAction.swift */; };
 		F13351371DD8CDEC00AE5C5B /* ETAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13351311DD8CDEC00AE5C5B /* ETAction.swift */; };
 		F13351381DD8CDEC00AE5C5B /* ETCornerRadiusAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13351321DD8CDEC00AE5C5B /* ETCornerRadiusAction.swift */; };
 		F13351391DD8CDED00AE5C5B /* ETFadeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13351331DD8CDEC00AE5C5B /* ETFadeAction.swift */; };
@@ -65,6 +66,7 @@
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		E91AE40E3226A9C6E3F45D1C3E5A5095 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB1E9BFE179B2E8C431D088A6EE1C791 /* Pods-EasyTransitioning_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyTransitioning_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F11092751E8B5372000935A8 /* ETTransformAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETTransformAction.swift; sourceTree = "<group>"; };
 		F13351311DD8CDEC00AE5C5B /* ETAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETAction.swift; sourceTree = "<group>"; };
 		F13351321DD8CDEC00AE5C5B /* ETCornerRadiusAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETCornerRadiusAction.swift; sourceTree = "<group>"; };
 		F13351331DD8CDEC00AE5C5B /* ETFadeAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETFadeAction.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				F13351321DD8CDEC00AE5C5B /* ETCornerRadiusAction.swift */,
 				F13351331DD8CDEC00AE5C5B /* ETFadeAction.swift */,
 				F13351341DD8CDEC00AE5C5B /* ETFrameAction.swift */,
+				F11092751E8B5372000935A8 /* ETTransformAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				F13351391DD8CDED00AE5C5B /* ETFadeAction.swift in Sources */,
 				F13351371DD8CDEC00AE5C5B /* ETAction.swift in Sources */,
 				8BFD96779955CE98C1C60DE13C1806AD /* EasyTransitioning-dummy.m in Sources */,
+				F11092761E8B5372000935A8 /* ETTransformAction.swift in Sources */,
 				F13351381DD8CDEC00AE5C5B /* ETCornerRadiusAction.swift in Sources */,
 				F133513C1DD8CDED00AE5C5B /* ETTransitionController.swift in Sources */,
 			);

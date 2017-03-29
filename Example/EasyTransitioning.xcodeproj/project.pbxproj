@@ -14,6 +14,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6793383B63A40E387B6D3AA4 /* Pods_EasyTransitioning_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E42B8C5C505950611F1706C6 /* Pods_EasyTransitioning_Tests.framework */; };
+		F11092711E8B5112000935A8 /* Example3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11092701E8B5112000935A8 /* Example3ViewController.swift */; };
+		F11092741E8B512C000935A8 /* Presented3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11092731E8B512C000935A8 /* Presented3ViewController.swift */; };
 		F133513E1DD8D36300AE5C5B /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F133513D1DD8D36300AE5C5B /* PresentedViewController.swift */; };
 		F16A23FF1DF104C100B9326A /* Example2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A23FE1DF104C100B9326A /* Example2ViewController.swift */; };
 		F16A24021DF104E400B9326A /* Presented2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16A24011DF104E400B9326A /* Presented2ViewController.swift */; };
@@ -50,6 +52,8 @@
 		911978EAE56D668901D1EE91 /* Pods-EasyTransitioning_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitioning_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitioning_Tests/Pods-EasyTransitioning_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D4431306D488C9AC8E2EF131 /* Pods-EasyTransitioning_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitioning_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitioning_Example/Pods-EasyTransitioning_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E42B8C5C505950611F1706C6 /* Pods_EasyTransitioning_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTransitioning_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F11092701E8B5112000935A8 /* Example3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Example3ViewController.swift; path = "Example 3/Example3ViewController.swift"; sourceTree = "<group>"; };
+		F11092731E8B512C000935A8 /* Presented3ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presented3ViewController.swift; path = "Example 3/Presented3ViewController.swift"; sourceTree = "<group>"; };
 		F133513D1DD8D36300AE5C5B /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 		F16A23FE1DF104C100B9326A /* Example2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Example2ViewController.swift; path = "Example 2/Example2ViewController.swift"; sourceTree = "<group>"; };
 		F16A24011DF104E400B9326A /* Presented2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Presented2ViewController.swift; path = "Example 2/Presented2ViewController.swift"; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				F16A23FD1DEFA76B00B9326A /* Example 1 */,
 				F16A24001DF104CA00B9326A /* Example 2 */,
+				F11092721E8B5117000935A8 /* Example 3 */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -164,6 +169,15 @@
 				911978EAE56D668901D1EE91 /* Pods-EasyTransitioning_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F11092721E8B5117000935A8 /* Example 3 */ = {
+			isa = PBXGroup;
+			children = (
+				F11092701E8B5112000935A8 /* Example3ViewController.swift */,
+				F11092731E8B512C000935A8 /* Presented3ViewController.swift */,
+			);
+			name = "Example 3";
 			sourceTree = "<group>";
 		};
 		F16A23FD1DEFA76B00B9326A /* Example 1 */ = {
@@ -389,10 +403,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F16A23FF1DF104C100B9326A /* Example2ViewController.swift in Sources */,
+				F11092711E8B5112000935A8 /* Example3ViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				F133513E1DD8D36300AE5C5B /* PresentedViewController.swift in Sources */,
 				F16A24021DF104E400B9326A /* Presented2ViewController.swift in Sources */,
+				F11092741E8B512C000935A8 /* Presented3ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
